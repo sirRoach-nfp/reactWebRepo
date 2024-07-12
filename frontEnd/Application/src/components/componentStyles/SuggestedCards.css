@@ -1,0 +1,47 @@
+.suggestedCardsdiv{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.suggestedImageDiv{
+    width: 150px;
+    height: 100px;
+    border: 1px red;
+    margin-right: 10px;
+}
+
+.suggestedInfoTag{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    justify-content: left;
+    
+}
+
+#suggestedTitleTag{
+    font-size: 18px;
+    color: #545454;
+  
+}
+
+#suggestedTimeTag{
+    font-size: 15px;
+    color: #ff914d;
+    font-weight: 600;
+
+}
+
+#suggestedAuthorTag{
+    font-size: 13px;
+    color: #545454;
+}
+
+.suggestedImage{
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,502 @@
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sharedcardmain{
+    width: fit-content;
+    height: fit-content;
+    border: 1px  green;
+    padding: 5px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 7px #b3b3b3,
+                 -5px -5px 7px #ffffff;
+            animation: zoom-out 0.5s ease-out forwards;
+}
+
+.sharedcardImageContainer{
+    width: 200px;
+    height: 120px;
+    border: 1pxblack;
+}
+
+.buttonDivs{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    border: 1px  red;
+}
+
+.sharedButtons{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+}
+
+#sharedEditButton{
+    padding: 3px 20px 3px 20px;
+    background-color: #84aa35;
+    border-radius: 3px;
+    margin-right: 10px;
+    color: #fbfbfb;
+}
+
+
+#sharedDeleteButton{
+    padding: 3px 13px 3px 13px;
+    color: #fbfbfb;
+    background-color: #ff5757;
+}
+
+.sharedTitleTag,.sharedTimeTag{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sharedTitleTag{
+    font-family: 'Open Sans', sans-serif;
+    color: #394a57;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sharedTimeTag{
+    font-family: 'Open Sans', sans-serif;
+    color: #ff914d;
+    font-weight: bold;
+    font-size: 12px;
+}
+.sharedImageCardPhoto{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+@media (min-width: 475px){
+    
+@keyframes zoom-out {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sharedcardmain{
+    width: fit-content;
+    height: fit-content;
+    border: 1px  green;
+    padding: 5px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 7px #b3b3b3,
+                 -5px -5px 7px #ffffff;
+            animation: zoom-out 0.5s ease-out forwards;
+}
+
+.sharedcardImageContainer{
+    width: 120px;
+    height: 70px;
+    border: 1pxblack;
+}
+
+.buttonDivs{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    border: 1px  red;
+}
+
+.sharedButtons{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+}
+
+#sharedEditButton{
+    padding: 3px 15px 3px 15px;
+    border-radius: 3px;
+    font-size: 10px;
+    background-color: #84aa35;
+    border-radius: 3px;
+    color: #fbfbfb;
+}
+
+
+#sharedDeleteButton{
+    padding: 3px 13px 3px 13px;
+    color: #fbfbfb;
+    background-color: #ff5757;
+}
+
+.sharedTitleTag,.sharedTimeTag{
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.sharedTitleTag{
+    font-family: 'Open Sans', sans-serif;
+    color: #394a57;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.sharedTimeTag{
+    font-family: 'Open Sans', sans-serif;
+    color: #ff914d;
+    font-weight: bold;
+    font-size: 10px;
+}
+.sharedImageCardPhoto{
+    width: 100%;
+    height: 100%;
+    
+}
+
+}
+@media (min-width: 640px){
+    @keyframes zoom-out {
+        0% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .sharedcardmain{
+        width: fit-content;
+        height: fit-content;
+        border: 1px  green;
+        padding: 5px;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  5px 5px 7px #b3b3b3,
+                     -5px -5px 7px #ffffff;
+                animation: zoom-out 0.5s ease-out forwards;
+    }
+    
+    .sharedcardImageContainer{
+        width: 120px;
+        height: 70px;
+        border: 1pxblack;
+    }
+    
+    .buttonDivs{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        border: 1px  red;
+    }
+    
+    .sharedButtons{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+    }
+    
+    #sharedEditButton{
+        padding: 3px 15px 3px 15px;
+        border-radius: 3px;
+        font-size: 10px;
+        background-color: #84aa35;
+        border-radius: 3px;
+        color: #fbfbfb;
+    }
+    
+    
+    #sharedDeleteButton{
+        padding: 3px 13px 3px 13px;
+        color: #fbfbfb;
+        background-color: #ff5757;
+    }
+    
+    .sharedTitleTag,.sharedTimeTag{
+        margin: 0;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    .sharedTitleTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #394a57;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    
+    .sharedTimeTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #ff914d;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .sharedImageCardPhoto{
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+@media (min-width: 768px){
+    @keyframes zoom-out {
+        0% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .sharedcardmain{
+        width: fit-content;
+        height: fit-content;
+        border: 1px  green;
+        padding: 5px;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  5px 5px 7px #b3b3b3,
+                     -5px -5px 7px #ffffff;
+                animation: zoom-out 0.5s ease-out forwards;
+    }
+    
+    .sharedcardImageContainer{
+        width: 160px;
+        height: 100px;
+        border: 1pxblack;
+    }
+    
+    .buttonDivs{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        border: 1px  red;
+    }
+    
+    .sharedButtons{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+    }
+    
+    #sharedEditButton{
+        padding: 3px 15px 3px 15px;
+        border-radius: 3px;
+        font-size: 10px;
+        background-color: #84aa35;
+        border-radius: 3px;
+        color: #fbfbfb;
+    }
+    
+    
+    #sharedDeleteButton{
+        padding: 3px 13px 3px 13px;
+        color: #fbfbfb;
+        background-color: #ff5757;
+    }
+    
+    .sharedTitleTag,.sharedTimeTag{
+        margin: 0;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    .sharedTitleTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #394a57;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    
+    .sharedTimeTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #ff914d;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .sharedImageCardPhoto{
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+@media (min-width: 1024px){
+    @keyframes zoom-out {
+        0% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .sharedcardmain{
+        width: fit-content;
+        height: fit-content;
+        border: 1px  green;
+        padding: 5px;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  5px 5px 7px #b3b3b3,
+                     -5px -5px 7px #ffffff;
+                animation: zoom-out 0.5s ease-out forwards;
+    }
+    
+    .sharedcardImageContainer{
+        width: 165px;
+        height: 100px;
+        border: 1pxblack;
+    }
+    
+    .buttonDivs{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        border: 1px  red;
+    }
+    
+    .sharedButtons{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+    }
+    
+    #sharedEditButton{
+        padding: 3px 15px 3px 15px;
+        border-radius: 3px;
+        font-size: 11px;
+        background-color: #84aa35;
+        border-radius: 3px;
+        color: #fbfbfb;
+    }
+    
+    
+    #sharedDeleteButton{
+        padding: 3px 13px 3px 13px;
+        color: #fbfbfb;
+        background-color: #ff5757;
+    }
+    
+    .sharedTitleTag,.sharedTimeTag{
+        margin: 0;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    
+    .sharedTitleTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #394a57;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    .sharedTimeTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #ff914d;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .sharedImageCardPhoto{
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+@media (min-width: 1280px){
+    @keyframes zoom-out {
+        0% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .sharedcardmain{
+        width: fit-content;
+        height: fit-content;
+        border: 1px  green;
+        padding: 5px;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  5px 5px 7px #b3b3b3,
+                     -5px -5px 7px #ffffff;
+                animation: zoom-out 0.5s ease-out forwards;
+    }
+    
+    .sharedcardImageContainer{
+        width: 210px;
+        height: 130px;
+        border: 1pxblack;
+    }
+    
+    .buttonDivs{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        border: 1px  red;
+    }
+    
+    .sharedButtons{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+    }
+    
+    #sharedEditButton{
+        padding: 3px 20px 3px 20px;
+        border-radius: 3px;
+        font-size: 14px;
+        background-color: #84aa35;
+        border-radius: 3px;
+        color: #fbfbfb;
+    }
+    
+    
+    #sharedDeleteButton{
+        padding: 3px 13px 3px 13px;
+        color: #fbfbfb;
+        background-color: #ff5757;
+    }
+    
+    .sharedTitleTag,.sharedTimeTag{
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .sharedTitleTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #394a57;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .sharedTimeTag{
+        font-family: 'Open Sans', sans-serif;
+        color: #ff914d;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .sharedImageCardPhoto{
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+@media (min-width: 1536px){}

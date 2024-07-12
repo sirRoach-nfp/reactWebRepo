@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+.heroSliderCard{
+    background-color: red;
+    height: 300px;
+    border-radius: 5px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+
+.itemInfoDiv{
+    border: 1px  red;
+    width: fit-content;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.itemTitle{
+    font-size: 35px;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.itemAuthor{
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+@media (min-width: 768px){
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+.heroSliderCard{
+    background-color: red;
+    height: 300px;
+    border-radius: 5px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.itemInfoDiv{
+    border: 1px  red;
+    width: fit-content;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.itemTitle{
+    font-size: 35px;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.itemAuthor{
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+}
+@media (min-width: 1024px){
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+.heroSliderCard{
+    background-color: red;
+    height: 300px;
+    border-radius: 5px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+
+.itemInfoDiv{
+    border: 1px  red;
+    max-width:400px;
+    width: fit-content;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.itemTitle{
+    font-size: 45px;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.itemAuthor{
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+}
+@media (min-width: 1280px){}
+@media (min-width: 1536px){}
