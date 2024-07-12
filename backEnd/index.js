@@ -14,6 +14,11 @@ const likedRecipeRoute = require("./routes/LikedRecipe");
 
 //model
 
+app.use(cors({
+    origin: "https://frontend-kzkr.onrender.com", // Replace with your frontend Render domain
+    methods: ["GET", "POST"], // Specify allowed HTTP methods
+    allowedHeaders: ["Content-Type"], // Specify allowed headers
+}));
 
 
 
