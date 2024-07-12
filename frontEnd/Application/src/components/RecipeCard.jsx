@@ -35,7 +35,7 @@ export default function RecipeCard({recipe}){
             <div className='infoCardDiv'>
                 <p className='recipeTitle'>{recipe.recipetitle}</p>
                 <div className='descriptionDiv'></div>
-                <p className='timeTag'>10 minutes</p>
+                <p className='timeTag'>{recipe.preptime} minutes</p>
                 <button className='readButton' onClick={redirectPage}>Read</button>
             </div>
 

@@ -18,6 +18,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 export default function EditPage(){
 
+    const portURL = "https://recipewebsitebackend.onrender.com";
 
     //load
 
@@ -42,7 +43,7 @@ export default function EditPage(){
 
         const fetchRecipe = async() => {
             try{
-                const res = await axios.get(`http://localhost:5000/api/recipe/viewrecipe/${recipeId}`);
+                const res = await axios.get(`${portURL}/api/recipe/viewrecipe/${recipeId}`);
                 console.log(res.data);
                 setRecipe(res.data)
                 setValue('recipeTitle', res.data.recipetitle);
@@ -74,7 +75,7 @@ export default function EditPage(){
         formData.append('author', recipe.author)
 
         try{
-            const res = await axios.put(`http://localhost:5000/api/recipe/update/${recipeId}`,formData,{
+            const res = await axios.put(`${portURL}/api/recipe/update/${recipeId}`,formData,{
                 headers:{
                     'Content-Type': 'multipart/form-data'
                 }
@@ -95,7 +96,7 @@ export default function EditPage(){
     const deleteRecipe = async()=>{
 
         try{
-            const res = await axios.delete(`http://localhost:5000/api/recipe/delete/${recipeId}`);
+            const res = await axios.delete(`${portURL}/api/recipe/delete/${recipeId}`);
             swal("Success!", "Recipe Deleted successfully", "success").then(() => {
                 navigate(`/account/${accountId}`);
             })

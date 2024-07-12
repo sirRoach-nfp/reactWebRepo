@@ -1,5 +1,6 @@
 import './componentStyles/HeroSliderCard.css'
 import ImageGallery from 'react-image-gallery';
+import {useNavigate} from 'react-router-dom'
 import { Buffer } from 'buffer';
 
 
@@ -20,10 +21,16 @@ export default function HeroSliderCard({itemData}){
     ]
 
 
+    const navigate = useNavigate();
+
+    const redirectToRecipe = () => {
+        navigate(`/Recipe/${itemData._id}`)
+    }
+
     //const snapshotData = itemData.recipephoto.data;
     console.log(base64Image);
     return(
-        <div className="heroSliderCard" style={{backgroundImage: `url(${base64Image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition:'center'}}>
+        <div className="heroSliderCard" style={{backgroundImage: `url(${base64Image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition:'center'}} onClick={redirectToRecipe}>
             <div className='itemInfoDiv'>
                 <h3 className='itemTitle'>{itemData.recipetitle}</h3>
                 <p className='itemAuthor'>By: {itemData.author}</p>

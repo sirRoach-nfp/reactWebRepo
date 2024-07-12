@@ -1,4 +1,106 @@
+@media(min-width: 320px){
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.accountpagemain{
+    width: 95%;
+    height: fit-content;
+    border: 1px  red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
+.accountInfoDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px green;
+    display: flex;
+}
+
+
+.pfpDiv{
+    width: fit-content;
+    height: fit-content;
+    border: 1px  green;
+}
+.detailsDiv{
+    padding-left: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px  green;
+    display: flex;
+    flex-direction: column;
+}
+
+.accountTag,.emailTag{
+    margin: 0;
+}
+
+.accountTag{
+    font-size: 22px;
+    color: #545454;
+}
+
+.emailTag{
+    color: #545454;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.logoutbutton{
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    background-color: #ff5757;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #fbfbfb;
+    padding: 4px 15px 4px 15px;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+}   
+
+.contentsDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1pxred;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.contentHeaderDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px  red;
+
+}
+
+.cardsDiv{
+    width: fit-content;
+    height: fit-content;
+    border: 1px  green;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+.contentHeader{
+    margin: 0;
+    font-size: 20px;
+    color: #545454;
+    font-family: 'Raleway', sans-serif;
+}
+
+}
 @media (min-width: 475px){
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 .accountpagemain{

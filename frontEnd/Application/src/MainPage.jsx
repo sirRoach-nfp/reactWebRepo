@@ -40,7 +40,7 @@ export default function HomePage(){
                     <div className="searchDiv">
                         <input type="text" className="searchBar" onChange={(e) => setSearch(e.target.value)}/>
                 
-                            {search !== "" && <Link to={`/Search/${search}`}><button className="searchButton"><img src={SearchIco} alt="" className="searchIco"/></button></Link>}
+                          <Link to={`/Search/${search}`}><button className="searchButton"><img src={SearchIco} alt="" className="searchIco"/></button></Link>
                            
                  
                     </div>

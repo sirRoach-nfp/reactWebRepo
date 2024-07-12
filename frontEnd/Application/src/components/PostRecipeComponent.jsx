@@ -18,6 +18,8 @@ import { useContext,useEffect } from 'react';
 
 export default function PostRecipeComponent(){
 
+    const portURL = "https://recipewebsitebackend.onrender.com";
+
     const {userName} = useContext(userContext);
     const schema = yup.object().shape({
         recipetitle: yup.string().required(),
@@ -44,7 +46,7 @@ export default function PostRecipeComponent(){
 
 
         try{
-            const response = await axios.post("http://localhost:5000/api/recipe/upload",formData, {
+            const response = await axios.post(`${portURL}/api/recipe/upload`,formData, {
                 headers:{
                     'Content-Type': 'multipart/form-data'
                 }
@@ -92,8 +94,9 @@ export default function PostRecipeComponent(){
                 <div className='postRecipeHeaderDiv'><h3 className='recipeFormHeader'>Share Your Recipe</h3></div>
                 
                 <TextField id="outlined-basic" label="Recipe Title" variant="outlined" 
-                style={{ width: '80%',margin: '10px' }}
+                style={{ width: '90%',margin: '10px' }}
                 {...register('recipeTitle')}
+
 
                 />
                 <TextField
@@ -101,7 +104,7 @@ export default function PostRecipeComponent(){
                     label="Recipe description"
                     multiline
                     maxRows={10}
-                    style={{width: '80%',margin: '10px'}}
+                    style={{width: '90%',margin: '10px'}}
                     {...register('recipeDescription')}
                 />
                 <TextField
@@ -110,7 +113,7 @@ export default function PostRecipeComponent(){
                    
                     multiline
                     maxRows={10}
-                    style={{width: '80%',margin: '10px'}}
+                    style={{width: '90%',margin: '10px'}}
                     {...register('recipeBody')}
                 />
                 <TextField
@@ -118,7 +121,7 @@ export default function PostRecipeComponent(){
                     label="How to make"
                     multiline
                     maxRows={10}
-                    style={{width: '80%',margin: '10px'}}
+                    style={{width: '90%',margin: '10px'}}
                     {...register('recipeStep')}
                 />
                 <TextField
@@ -126,7 +129,7 @@ export default function PostRecipeComponent(){
                     label="Prep Time (Minutes)"
                    
                     type="number"
-                    style={{width: '80%',margin: '10px'}}
+                    style={{width: '90%',margin: '10px'}}
                     InputLabelProps={{
                         shrink: true,
                     }}
@@ -135,11 +138,19 @@ export default function PostRecipeComponent(){
                     }}
                     {...register('recipePreptime')}
                 />
-                <label className='labelInput'>Recipe Snapshot</label>
+
+                <div className='fileInputDiv'><label className='labelInput'>Recipe Snapshot</label>
                 <input className='custom-file-input' type="file" accept=".jpg,.png"
                 {...register('recipeCover')}
-                />   
-                <input type='submit' className='submitButton' value="Post Recipe"/>
+                />   </div>
+
+                <div className='uploadButtonDiv'>
+
+                    <input type='submit' className='submitButton' value="Post Recipe"/>
+
+                </div>
+                
+               
 
             </form>
 

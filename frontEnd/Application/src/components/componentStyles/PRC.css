@@ -1,7 +1,7 @@
 .PRCmain{
     width: 95%;
     height: fit-content;
-    border: 1px red;
+    border: 1px  red;
     display: flex;
     flex-direction: column;
     
@@ -17,6 +17,8 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type=file]{
@@ -42,7 +44,7 @@ input[type=file]::file-selector-button {
   }
   
   .labelInput{
-    margin-left: 10px;
+   
   }
 
 
@@ -58,7 +60,7 @@ input[type=file]::file-selector-button {
     color: hsl(0, 0%, 100%);
     cursor: pointer;
     width: fit-content;
-    margin-left: 10px;
+
   }
   
   .submitButton:hover {
@@ -88,5 +90,718 @@ input[type=file]::file-selector-button {
     padding-bottom: 5px;
     background-color: #84aa35;
     margin-bottom: 10px;
+    border-radius: 5px;
 
   }
+
+  .fileInputDiv{
+    width: 90%;
+    height: fit-content;
+    border: 1px  red;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .uploadButtonDiv{
+    width: 90%;
+    height: fit-content;
+    border: 1px  red;
+    flex-direction: column;
+    
+  }
+
+  @media(min-width: 320px){
+    .PRCmain{
+      width: 95%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      
+      padding-bottom: 25px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  
+  .recipeForm{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  input[type=file]{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 3px;
+      width: fit-content;
+      margin: 10px;
+  }
+  input[type=file]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #084cdf;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background: #0d45a5;
+    }
+    
+    .labelInput{
+     
+    }
+  
+  
+    .submitButton {
+      padding: 8px 30px;
+      border-radius: 10px;
+      border: 0;
+      background-color: rgb(255, 56, 86);
+      letter-spacing: 1.5px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      width: fit-content;
+  
+    }
+    
+    .submitButton:hover {
+      box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+    }
+    
+    .submitButton:active {
+      background-color: rgb(255, 56, 86);
+      /*50, 168, 80*/
+      box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+      transform: translateY(5px);
+      transition: 200ms;
+    }
+    
+    .recipeFormHeader{
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      color: #d9d9d9;
+    }
+  
+    .postRecipeHeaderDiv{
+      width: 100%;
+      height: fit-content;
+    
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #84aa35;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  
+    }
+  
+    .fileInputDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .uploadButtonDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      flex-direction: column;
+      
+    }
+  }
+
+
+
+
+  @media (min-width: 475px){
+    .PRCmain{
+      width: 95%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      
+      padding-bottom: 25px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  
+  .recipeForm{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  input[type=file]{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 3px;
+      width: fit-content;
+      margin: 10px;
+  }
+  input[type=file]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #084cdf;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background: #0d45a5;
+    }
+    
+    .labelInput{
+     
+    }
+  
+  
+    .submitButton {
+      padding: 12px 30px;
+      border-radius: 10px;
+      border: 0;
+      background-color: rgb(255, 56, 86);
+      letter-spacing: 1.5px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      width: fit-content;
+  
+    }
+    
+    .submitButton:hover {
+      box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+    }
+    
+    .submitButton:active {
+      background-color: rgb(255, 56, 86);
+      /*50, 168, 80*/
+      box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+      transform: translateY(5px);
+      transition: 200ms;
+    }
+    
+    .recipeFormHeader{
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      color: #d9d9d9;
+    }
+  
+    .postRecipeHeaderDiv{
+      width: 100%;
+      height: fit-content;
+    
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #84aa35;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  
+    }
+  
+    .fileInputDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .uploadButtonDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      flex-direction: column;
+      
+    }
+  
+  }
+  @media (min-width: 640px){
+    .PRCmain{
+      width: 95%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      
+      padding-bottom: 25px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  
+  .recipeForm{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  input[type=file]{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 3px;
+      width: fit-content;
+      margin: 10px;
+  }
+  input[type=file]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #084cdf;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background: #0d45a5;
+    }
+    
+    .labelInput{
+     
+    }
+  
+  
+    .submitButton {
+      padding: 12px 30px;
+      border-radius: 10px;
+      border: 0;
+      background-color: rgb(255, 56, 86);
+      letter-spacing: 1.5px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      width: fit-content;
+  
+    }
+    
+    .submitButton:hover {
+      box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+    }
+    
+    .submitButton:active {
+      background-color: rgb(255, 56, 86);
+      /*50, 168, 80*/
+      box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+      transform: translateY(5px);
+      transition: 200ms;
+    }
+    
+    .recipeFormHeader{
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      color: #d9d9d9;
+    }
+  
+    .postRecipeHeaderDiv{
+      width: 100%;
+      height: fit-content;
+    
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #84aa35;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  
+    }
+  
+    .fileInputDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .uploadButtonDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      flex-direction: column;
+      
+    }
+  
+  }
+  @media (min-width: 768px){
+    .PRCmain{
+      width: 95%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      
+      padding-bottom: 25px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  
+  .recipeForm{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  input[type=file]{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 3px;
+      width: fit-content;
+      margin: 10px;
+  }
+  input[type=file]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #084cdf;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background: #0d45a5;
+    }
+    
+    .labelInput{
+     
+    }
+  
+  
+    .submitButton {
+      padding: 12px 30px;
+      border-radius: 10px;
+      border: 0;
+      background-color: rgb(255, 56, 86);
+      letter-spacing: 1.5px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      width: fit-content;
+  
+    }
+    
+    .submitButton:hover {
+      box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+    }
+    
+    .submitButton:active {
+      background-color: rgb(255, 56, 86);
+      /*50, 168, 80*/
+      box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+      transform: translateY(5px);
+      transition: 200ms;
+    }
+    
+    .recipeFormHeader{
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      color: #d9d9d9;
+    }
+  
+    .postRecipeHeaderDiv{
+      width: 100%;
+      height: fit-content;
+    
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #84aa35;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  
+    }
+  
+    .fileInputDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .uploadButtonDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      flex-direction: column;
+      
+    }
+  
+  }
+  @media (min-width: 1024px){
+    .PRCmain{
+      width: 95%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      
+      padding-bottom: 25px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  
+  .recipeForm{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  input[type=file]{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 3px;
+      width: fit-content;
+      margin: 10px;
+  }
+  input[type=file]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #084cdf;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background: #0d45a5;
+    }
+    
+    .labelInput{
+     
+    }
+  
+  
+    .submitButton {
+      padding: 12px 30px;
+      border-radius: 10px;
+      border: 0;
+      background-color: rgb(255, 56, 86);
+      letter-spacing: 1.5px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      width: fit-content;
+  
+    }
+    
+    .submitButton:hover {
+      box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+    }
+    
+    .submitButton:active {
+      background-color: rgb(255, 56, 86);
+      /*50, 168, 80*/
+      box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+      transform: translateY(5px);
+      transition: 200ms;
+    }
+    
+    .recipeFormHeader{
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      color: #d9d9d9;
+    }
+  
+    .postRecipeHeaderDiv{
+      width: 100%;
+      height: fit-content;
+    
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #84aa35;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  
+    }
+  
+    .fileInputDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .uploadButtonDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      flex-direction: column;
+      
+    }
+  
+  }
+  @media (min-width: 1280px){
+    .PRCmain{
+      width: 95%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      
+      padding-bottom: 25px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  
+  .recipeForm{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  input[type=file]{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 3px;
+      width: fit-content;
+      margin: 10px;
+  }
+  input[type=file]::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #084cdf;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background .2s ease-in-out;
+    }
+    
+    input[type=file]::file-selector-button:hover {
+      background: #0d45a5;
+    }
+    
+    .labelInput{
+     
+    }
+  
+  
+    .submitButton {
+      padding: 12px 30px;
+      border-radius: 10px;
+      border: 0;
+      background-color: rgb(255, 56, 86);
+      letter-spacing: 1.5px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      width: fit-content;
+  
+    }
+    
+    .submitButton:hover {
+      box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+    }
+    
+    .submitButton:active {
+      background-color: rgb(255, 56, 86);
+      /*50, 168, 80*/
+      box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+      transform: translateY(5px);
+      transition: 200ms;
+    }
+    
+    .recipeFormHeader{
+      text-align: center;
+      margin: 0;
+      font-size: 25px;
+      color: #d9d9d9;
+    }
+  
+    .postRecipeHeaderDiv{
+      width: 100%;
+      height: fit-content;
+    
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #84aa35;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  
+    }
+  
+    .fileInputDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .uploadButtonDiv{
+      width: 90%;
+      height: fit-content;
+      border: 1px  red;
+      flex-direction: column;
+      
+    }
+  
+  }
+  @media (min-width: 1536px){}

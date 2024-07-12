@@ -6,6 +6,9 @@ import RecipeCard from "../components/RecipeCard";
 import './pagesStyle/ResultPage.css'
 import CircularProgress from '@mui/material/CircularProgress';
 export default function ResultPage() {
+
+    const portURL = "https://recipewebsitebackend.onrender.com";
+
     const {searchValue} = useParams();
 
     const [results,setResults] = useState([]);
@@ -19,12 +22,12 @@ export default function ResultPage() {
         const fetchResults = async() => {
             try{
                 if(searchValue !== ""){
-                    const res = await axios.get(`http://localhost:5000/api/recipe/Search/${searchValue}`);
+                    const res = await axios.get(`${portURL}/api/recipe/Search/${searchValue}`);
                     setResults(res.data)
                     console.log(res.data)
                 }
                 else{
-                    const res = await axios.get(`http://localhost:5000/api/recipe/recipes/random`);
+                    const res = await axios.get(`${portURL}/api/recipe/recipes/random`);
                     setResults(res.data);
                 }
                 

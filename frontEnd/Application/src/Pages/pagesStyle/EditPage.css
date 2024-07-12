@@ -77,3 +77,478 @@
     background-color: #ff5757;
     padding: 6px 45px 6px 45px;
 }
+
+@media(min-width: 320px){
+    
+.editpagemain{
+    width: 95%;
+    height: fit-content;
+    border: 1px  red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.formDivEdit{
+    width: 100%;
+    height: fit-content;
+    border: 1px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.fileUploadDiv{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px red;
+}
+
+.editButtonDiv{
+    width: 90%;
+    height: fit-content;
+    margin-top: 15px;
+    border: 1px  green;
+    display: flex;
+}
+
+.editHeaderDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px  red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #84aa35;
+    border-radius: 5px;
+    
+}
+
+
+.editheader{
+    margin: 0;
+    margin-top: 5px;
+    color: #d9d9d9;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.saveEditButton,.deleteRecipeButton{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    color: #fbfbfb;
+}
+
+.saveEditButton{
+    background-color: #84aa35;
+    padding: 6px 20px 6px 20px;
+    margin-right: 15px;
+
+}
+
+.deleteRecipeButton{
+    background-color: #ff5757;
+    padding: 6px 45px 6px 45px;
+}
+}
+
+
+@media (min-width: 475px){.editpagemain{
+    width: 95%;
+    height: fit-content;
+    border: 1px  red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.formDivEdit{
+    width: 100%;
+    height: fit-content;
+    border: 1px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.fileUploadDiv{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px red;
+}
+
+.editButtonDiv{
+    width: 90%;
+    height: fit-content;
+    margin-top: 15px;
+    border: 1px  green;
+    display: flex;
+}
+
+.editHeaderDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px  red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #84aa35;
+    border-radius: 5px;
+    
+}
+
+
+.editheader{
+    margin: 0;
+    margin-top: 5px;
+    color: #d9d9d9;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.saveEditButton,.deleteRecipeButton{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    color: #fbfbfb;
+}
+
+.saveEditButton{
+    background-color: #84aa35;
+    padding: 6px 20px 6px 20px;
+    margin-right: 15px;
+
+}
+
+.deleteRecipeButton{
+    background-color: #ff5757;
+    padding: 6px 45px 6px 45px;
+}}
+@media (min-width: 640px){.editpagemain{
+    width: 95%;
+    height: fit-content;
+    border: 1px  red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.formDivEdit{
+    width: 100%;
+    height: fit-content;
+    border: 1px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.fileUploadDiv{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px red;
+}
+
+.editButtonDiv{
+    width: 90%;
+    height: fit-content;
+    margin-top: 15px;
+    border: 1px  green;
+    display: flex;
+}
+
+.editHeaderDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px  red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #84aa35;
+    border-radius: 5px;
+    
+}
+
+
+.editheader{
+    margin: 0;
+    margin-top: 5px;
+    color: #d9d9d9;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.saveEditButton,.deleteRecipeButton{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    color: #fbfbfb;
+}
+
+.saveEditButton{
+    background-color: #84aa35;
+    padding: 6px 20px 6px 20px;
+    margin-right: 15px;
+
+}
+
+.deleteRecipeButton{
+    background-color: #ff5757;
+    padding: 6px 45px 6px 45px;
+}}
+@media (min-width: 768px){.editpagemain{
+    width: 95%;
+    height: fit-content;
+    border: 1px  red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.formDivEdit{
+    width: 100%;
+    height: fit-content;
+    border: 1px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.fileUploadDiv{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px red;
+}
+
+.editButtonDiv{
+    width: 90%;
+    height: fit-content;
+    margin-top: 15px;
+    border: 1px  green;
+    display: flex;
+}
+
+.editHeaderDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px  red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #84aa35;
+    border-radius: 5px;
+    
+}
+
+
+.editheader{
+    margin: 0;
+    margin-top: 5px;
+    color: #d9d9d9;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.saveEditButton,.deleteRecipeButton{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    color: #fbfbfb;
+}
+
+.saveEditButton{
+    background-color: #84aa35;
+    padding: 6px 20px 6px 20px;
+    margin-right: 15px;
+
+}
+
+.deleteRecipeButton{
+    background-color: #ff5757;
+    padding: 6px 45px 6px 45px;
+}}
+@media (min-width: 1024px){.editpagemain{
+    width: 95%;
+    height: fit-content;
+    border: 1px  red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.formDivEdit{
+    width: 100%;
+    height: fit-content;
+    border: 1px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.fileUploadDiv{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px red;
+}
+
+.editButtonDiv{
+    width: 90%;
+    height: fit-content;
+    margin-top: 15px;
+    border: 1px  green;
+    display: flex;
+}
+
+.editHeaderDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px  red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #84aa35;
+    border-radius: 5px;
+    
+}
+
+
+.editheader{
+    margin: 0;
+    margin-top: 5px;
+    color: #d9d9d9;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.saveEditButton,.deleteRecipeButton{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    color: #fbfbfb;
+}
+
+.saveEditButton{
+    background-color: #84aa35;
+    padding: 6px 20px 6px 20px;
+    margin-right: 15px;
+
+}
+
+.deleteRecipeButton{
+    background-color: #ff5757;
+    padding: 6px 45px 6px 45px;
+}}
+@media (min-width: 1280px){.editpagemain{
+    width: 95%;
+    height: fit-content;
+    border: 1px  red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.formDivEdit{
+    width: 100%;
+    height: fit-content;
+    border: 1px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.fileUploadDiv{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px red;
+}
+
+.editButtonDiv{
+    width: 90%;
+    height: fit-content;
+    margin-top: 15px;
+    border: 1px  green;
+    display: flex;
+}
+
+.editHeaderDiv{
+    width: 100%;
+    height: fit-content;
+    border: 1px  red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #84aa35;
+    border-radius: 5px;
+    
+}
+
+
+.editheader{
+    margin: 0;
+    margin-top: 5px;
+    color: #d9d9d9;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.saveEditButton,.deleteRecipeButton{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    color: #fbfbfb;
+}
+
+.saveEditButton{
+    background-color: #84aa35;
+    padding: 6px 20px 6px 20px;
+    margin-right: 15px;
+
+}
+
+.deleteRecipeButton{
+    background-color: #ff5757;
+    padding: 6px 45px 6px 45px;
+}}
+@media (min-width: 1536px){}

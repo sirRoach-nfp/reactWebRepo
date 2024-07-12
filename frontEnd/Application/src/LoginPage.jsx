@@ -9,6 +9,8 @@ import { userContext } from './MainPage';
 
 function LoginPage(){
 
+    const portURL = "https://recipewebsitebackend.onrender.com";
+
     const {accountId,setAccountId,isLogged,setLogged,setUser} = useContext(userContext)
 
     const navigate = useNavigate();
@@ -28,7 +30,7 @@ function LoginPage(){
 
     const loginHandler = async () =>{
         try {
-            const res = await axios.post("http://localhost:5000/api/auth/login",{
+            const res = await axios.post(`${portURL}/api/auth/login`,{
                 username,
                 password
             });
@@ -52,21 +54,63 @@ function LoginPage(){
         <div className='loginpagemaincont'>
        
             <div className="Loginpagemain">
-                <h1>Login</h1>
+                <h1 className='loginHeader'>Login</h1>
                 {error && <p style={{ color: 'red' }} >{error}</p>}
                 <TextField id="outlined-basic" label="Username" variant="outlined" onChange={userHandler} 
                 style={{ width: '90%',margin: '10px' }}
+                sx={{
+                    width: '70%',
+                    margin: '10px',
+                    '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&:hover fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: 'white',
+                        },
+                    },
+                    '& .MuiInputLabel-root': {
+                        color: 'white',
+                    },
+                    '& .MuiInputBase-input': {
+                        color: 'white',
+                    },
+                }}
         
                 />
                 <TextField id="outlined-basic" label="Password" variant="outlined" onChange={passwordHandler} 
                 style={{ width: '90%',margin: '10px' }}
+                sx={{
+                    width: '70%',
+                    margin: '10px',
+                    '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&:hover fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: 'white',
+                        },
+                    },
+                    '& .MuiInputLabel-root': {
+                        color: 'white',
+                    },
+                    '& .MuiInputBase-input': {
+                        color: 'white',
+                    },
+                }}
                 
                 />
-                <p>forgot your password?</p>
+                <p className='loginText'>forgot your password?</p>
                 <Button variant="contained" onClick={loginHandler}
-                    style={{ width: '90%', marginTop: '15px', marginBottom: '15px', backgroundColor: '#84aa35'}}
+                    style={{ width: '90%', marginTop: '15px', marginBottom: '15px'}}
                 >Contained</Button>
-                <p>Don't have an account? <Link to={"/Register"}>signup</Link></p>
+                <p className='loginText'>Don't have an account? <Link to={"/Register"}>signup</Link></p>
             </div>
         </div>
         </>

@@ -13,6 +13,9 @@ import './pagesStyle/RegisterPage.css'
 
 export default function RegisterPage(){
 
+
+    const portURL = "https://recipewebsitebackend.onrender.com";
+
     const navigate = useNavigate();
     
 
@@ -51,7 +54,7 @@ export default function RegisterPage(){
             })
         }
         try{
-            const res = await axios.post(`http://localhost:5000/api/auth/register`,formData, {
+            const res = await axios.post(`${portURL}/api/auth/register`,formData, {
                 headers:{
                     'Content-Type': 'multipart/form-data'
                 }
@@ -86,32 +89,100 @@ export default function RegisterPage(){
 
     return(
 
+        <>
+        
+        <hr />
         <div className="registerPageMain" onSubmit={handleSubmit(registerUser)}>
 
             <form action="" className='registerFormContainer'>
-                 <h1>Signup</h1>
+                 <h1 className='registerHeader'>Signup</h1>
                 <TextField id="outlined-basic" label="Username" variant="outlined" 
-                style={{ width: '90%',margin: '10px' }}
+                style={{ width: '70%',margin: '10px' }}
                 {...register('username')}
+                sx={{
+                    width: '70%',
+                    margin: '10px',
+                    '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&:hover fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: 'white',
+                        },
+                    },
+                    '& .MuiInputLabel-root': {
+                        color: 'white',
+                    },
+                    '& .MuiInputBase-input': {
+                        color: 'white',
+                    },
+                }}
+                
                
                 />
                 <TextField id="outlined-basic" label="Email" variant="outlined" 
-                style={{ width: '90%',margin: '10px' }}
+                style={{ width: '70%',margin: '10px' }}
                 {...register('email')}
+                sx={{
+                    width: '70%',
+                    margin: '10px',
+                    '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&:hover fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: 'white',
+                        },
+                    },
+                    '& .MuiInputLabel-root': {
+                        color: 'white',
+                    },
+                    '& .MuiInputBase-input': {
+                        color: 'white',
+                    },
+                }}
                 />
                 <TextField id="outlined-basic" label="Password" variant="outlined" 
-                style={{ width: '90%',margin: '10px' }}
+                style={{ width: '70%',margin: '10px',  }}
                 {...register('password')}
+                sx={{
+                    width: '70%',
+                    margin: '10px',
+                    '& .MuiOutlinedInput-root': {
+                        '& fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&:hover fieldset': {
+                            borderColor: 'white',
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: 'white',
+                        },
+                    },
+                    '& .MuiInputLabel-root': {
+                        color: 'white',
+                    },
+                    '& .MuiInputBase-input': {
+                        color: 'white',
+                    },
+                }}
                 />
                 <Button variant="contained"
                 type="submit" 
               
-                style={{ width: '90%', marginTop: '15px', marginBottom: '15px'}}
+                style={{ width: '50%', marginTop: '15px', marginBottom: '15px'}}
                 >Contained</Button>
                 <p>Already have an account? <Link to={"/Login"}>Login</Link></p>
 
             </form>
  
         </div>
+        </>
     )
 }

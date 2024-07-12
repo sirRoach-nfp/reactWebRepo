@@ -7,6 +7,9 @@ import './pagesStyle/RecipePage.css'
 import SuggestedCards from '../components/SuggestedCards';
 
 export default function RecipePage(){
+
+    const portURL = "https://recipewebsitebackend.onrender.com";
+    
     const {recipeId} = useParams()
     const [recipe,setRecipe] = useState([]);
     const [suggested,setSuggested] = useState([])
@@ -19,8 +22,8 @@ export default function RecipePage(){
         setLoading(true)
         const fetchRecipe = async () =>{
             try{
-                const res = await axios.get(`http://localhost:5000/api/recipe/viewrecipe/${recipeId}`)
-                const suggestedRes = await axios.get(`http://localhost:5000/api/recipe/suggested`);
+                const res = await axios.get(`${portURL}/api/recipe/viewrecipe/${recipeId}`)
+                const suggestedRes = await axios.get(`${portURL}/api/recipe/suggested`);
                 setSuggested(suggestedRes.data);
                 //console.log(suggestedRes.data)
                 setRecipe(res.data);

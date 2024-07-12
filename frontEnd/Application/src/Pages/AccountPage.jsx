@@ -13,6 +13,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 export default function AccountPage(){
 
+    const portURL = "https://recipewebsitebackend.onrender.com";
 
     //load
     const [contentLoading,setContentLoading] = useState(true);
@@ -34,8 +35,8 @@ export default function AccountPage(){
 
         const fetchAccount = async () => {
             try{
-                const res = await axios.post(`http://localhost:5000/api/users/account/${accountId}`);
-                const recipeData = await axios.get(`http://localhost:5000/api/recipe/shared/${res.data.username}`);
+                const res = await axios.post(`${portURL}/api/users/account/${accountId}`);
+                const recipeData = await axios.get(`${portURL}/api/recipe/shared/${res.data.username}`);
 
                 
                 setAccount(res.data);

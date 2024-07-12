@@ -18,7 +18,7 @@ import Slider from 'react-slick';
 export default function HomePage(){
 
 
-
+    const portURL = "https://recipewebsitebackend.onrender.com";
 
 
 
@@ -93,8 +93,8 @@ export default function HomePage(){
     useEffect(() =>{
         const fetchRandomrRecipe = async () => {
             try{
-                const res = await axios.get(`https://recipewebsitebackend.onrender.com/api/recipe/recipes/random`)
-                const suggestedRes = await axios.get(`https://recipewebsitebackend.onrender.com/api/recipe/recommendedDisplay`);
+                const res = await axios.get(`${portURL}/api/recipe/recipes/random`)
+                const suggestedRes = await axios.get(`${portURL}/api/recipe/recommendedDisplay`);
                 setSuggested(suggestedRes.data);
                 setRecipes(res.data);
                
@@ -112,7 +112,7 @@ export default function HomePage(){
     useEffect(() => {
         const fetchRecommended = async () => {
             try{
-                const res = await axios.get(`http://localhost:5000/api/recipe/recipes/recommended/${resultCount}`);
+                const res = await axios.get(`${portURL}/api/recipe/recipes/recommended/${resultCount}`);
                 setRecommended(res.data);
              
             } catch(err){
