@@ -93,7 +93,7 @@ export default function HomePage(){
     useEffect(() =>{
         const fetchRandomrRecipe = async () => {
             try{
-                const res = await axios.get(`http://localhost:5000/api/recipe/recipes/random`)
+                const res = await axios.get(`https://recipewebsitebackend.onrender.com/api/recipe/recipes/random`)
                 const suggestedRes = await axios.get(`https://recipewebsitebackend.onrender.com/api/recipe/recommendedDisplay`);
                 setSuggested(suggestedRes.data);
                 setRecipes(res.data);
